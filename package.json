@@ -1,0 +1,14 @@
+{
+	"name": "Space Fighters",
+	"version": "1.0.0",
+	"description": "multi-player space fighter battles",
+	"main": "server.js",
+	"author": "skotmerfie",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.14.0",
+		"path": "^0.12.7",
+		"socket.io": "^1.4.8",
+		"socket.io-client": "^1.4.8"
+	}
+}

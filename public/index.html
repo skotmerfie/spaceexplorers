@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>Space Fighters!</title>
+	<style type="text/css">
+		body {
+			background-color: #000011;
+			margin: 0px;
+			text-align: center;
+			overflow: hidden;
+		}
+		canvas {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+        function resize_canvas() {
+            canvas = document.getElementById("canvas");
+            if (canvas.width != window.innerWidth)
+                canvas.width  = window.innerWidth;
+
+            if (canvas.height != window.innerHeight)
+                canvas.height = window.innerHeight;
+        }
+    </script>
+</head>
+<body onload="resize_canvas()" onresize="resize_canvas()">
+	<canvas id="canvas">Your browser doesn't support canvas</canvas>
+	<script src="creative.js"></script>
+	<script src="KeyTracker.js"></script>
+	<script src="client.js"></script>
+	<script src="draw.js"></script>
+</body>
+</html>
